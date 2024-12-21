@@ -1,0 +1,10 @@
+{
+    "Id": "UMMAutoReload",
+    "DisplayName": "AutoReload",
+    "Author": "Zeibach",
+    "Version": "1.0.0",
+    "AssemblyName": "UMMAutoReload.dll",
+    "EntryMethod": "UMMAutoReload.Main.Load",
+    "HomePage": "https://www.nexusmods.com/derailvalley/mods/",
+    "Repository": "https://raw.githubusercontent.com/mspielberg/umm-auto-reload/master/resources/repository.json"
+}
