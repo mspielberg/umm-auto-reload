@@ -2,7 +2,7 @@ using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityModManagerNet;
 
-namespace UMM.AutoReload;
+namespace UMMAutoReload;
 
 public class Checker : MonoBehaviour
 {

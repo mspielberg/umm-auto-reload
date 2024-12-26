@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityModManagerNet;
 
-namespace UMM.AutoReload;
+namespace UMMAutoReload;
 
 public class Settings : UnityModManager.ModSettings
 {

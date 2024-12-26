@@ -1,4 +1,4 @@
-namespace UMM.AutoReload;
+namespace UMMAutoReload;
 
 using UnityEngine;
 using UnityModManagerNet;
