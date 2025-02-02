@@ -44,4 +44,11 @@ public static class Main
         return true;
     }
 
+    public static void DebugLog(Func<string> message)
+    {
+        if (settings!.loggingEnabled)
+        {
+            mod!.Logger.Log(message());
+        }
+    }
 }

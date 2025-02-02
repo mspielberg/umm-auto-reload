@@ -8,6 +8,8 @@ public class Settings : UnityModManager.ModSettings
     [Draw("Check Interval")] public TimeSpan checkInterval = new(TimeSpan.TicksPerSecond);
     public readonly HashSet<string> enabledModIds = new();
 
+    public bool loggingEnabled = false;
+
     public void Draw()
     {
         GUILayout.BeginVertical(GUILayout.ExpandWidth(false));
@@ -31,6 +33,10 @@ public class Settings : UnityModManager.ModSettings
                 enabledModIds.Remove(modId);
             }
         }
+
+        GUILayout.Space(10);
+
+        loggingEnabled = GUILayout.Toggle(loggingEnabled, "Logging Enabled");
 
         GUILayout.EndVertical();
     }
