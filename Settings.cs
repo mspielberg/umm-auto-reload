@@ -22,7 +22,7 @@ public class Settings : UnityModManager.ModSettings
             .Select(mod => mod.Info.Id);
 
         GUILayout.Label("Enabled Mods");
-        foreach (var modId in enabledModIds)
+        foreach (var modId in reloadableModIds)
         {
             if (GUILayout.Toggle(enabledModIds.Contains(modId), modId))
             {
