@@ -5,7 +5,6 @@ namespace UMMAutoReload;
 
 public class Settings : UnityModManager.ModSettings
 {
-    [Draw("Check Interval")] public TimeSpan checkInterval = new(TimeSpan.TicksPerSecond);
     public readonly HashSet<string> enabledModIds = new();
 
     public bool loggingEnabled = false;
@@ -13,9 +12,6 @@ public class Settings : UnityModManager.ModSettings
     public void Draw()
     {
         GUILayout.BeginVertical(GUILayout.ExpandWidth(false));
-
-        GUILayout.Label("Check Interval");
-        checkInterval = TimeSpan.Parse(GUILayout.TextField(checkInterval.ToString()));
 
         var reloadableModIds = UnityModManager.modEntries
             .Where(mod => mod.CanReload && mod.HasAssembly)

@@ -5,7 +5,7 @@ using UnityModManagerNet;
 
 public static class Main
 {
-    private static UnityModManager.ModEntry? mod;
+    internal static UnityModManager.ModEntry? mod;
     private static Settings? settings;
     
     private static GameObject? gameObject;
