@@ -18,6 +18,7 @@ public static class Main
         settings = UnityModManager.ModSettings.Load<Settings>(modEntry);
 
         mod.OnGUI = OnGUI;
+        mod.OnSaveGUI = settings.Save;
         mod.OnToggle = OnToggle;
 
         return true;
